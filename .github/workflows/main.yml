@@ -1,4 +1,3 @@
-# .github/workflows/**main.yml**
 name: Django-app workflow
 
 on: [push]
@@ -23,3 +22,5 @@ jobs:
     - name: Test with flake8 and django tests
       run: |
         python -m flake8
+        cd infra_project/
+        python manage.py test
