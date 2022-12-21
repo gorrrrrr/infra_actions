@@ -9,10 +9,8 @@ urls_content = (
 
 
 class StaticPagesURLTests(TestCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
-        cls.guest_client = Client()
+    def setUp(self):
+        self.guest_client = Client()
 
     def test_about_url_exists_at_desired_location(self):
         """Проверка доступности страниц."""
