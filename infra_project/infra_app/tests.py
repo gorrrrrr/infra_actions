@@ -3,8 +3,8 @@ from http import HTTPStatus
 from django.test import Client, TestCase
 
 urls_content = (
-    ('/', 'У меня получилось!')
-    ('/second_page/', 'А это вторая страница')
+    ('/', 'У меня получилось!'),
+    ('/second_page/', 'А это вторая страница'),
 )
 
 
